@@ -36,7 +36,7 @@ public class PlayerJump : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && (jumpCount > 0))
         {          
-            jumpCount -= 1; // Á¡ÇÁ½Ã ¸¶ÀÌ³Ê½º
+            jumpCount -= 1; // ì í”„ì‹œ ë§ˆì´ë„ˆìŠ¤
             isJumping = true;
 
             if (isJumping && jumpCount == 1)
@@ -52,10 +52,10 @@ public class PlayerJump : MonoBehaviour
                 SoundManager.instance.PlaySE(PlayerJumpSound);
             }
         }
-        //VelocityChange Áú·®À» ¹«½ÃÇÏ°í, ¸®Áöµå¹Ùµğ(rigidbody)¿¡ ¼Óµµ º¯È­¸¦ ÂªÀº ¼ø°£¿¡ Àû¿ëÇÒ °æ¿ì¿¡ »ç¿ëÇÕ´Ï´Ù.
+        //VelocityChange ì§ˆëŸ‰ì„ ë¬´ì‹œí•˜ê³ , ë¦¬ì§€ë“œë°”ë””(rigidbody)ì— ì†ë„ ë³€í™”ë¥¼ ì§§ì€ ìˆœê°„ì— ì ìš©í•  ê²½ìš°ì— ì‚¬ìš©.
     }
 
-    #region Á¡ÇÁ Ãæµ¹
+    #region ì í”„ ì¶©ëŒ
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Ground")
