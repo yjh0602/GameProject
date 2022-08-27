@@ -52,7 +52,6 @@ public class PlayerJump : MonoBehaviour
                 SoundManager.instance.PlaySE(PlayerJumpSound);
             }
         }
-        //VelocityChange 질량을 무시하고, 리지드바디(rigidbody)에 속도 변화를 짧은 순간에 적용할 경우에 사용.
     }
 
     #region 점프 충돌
